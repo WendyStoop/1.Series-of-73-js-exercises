@@ -11,15 +11,7 @@
 
 (function() {
 
-    console.log("Wendy")
-    var person = prompt("Please type your name", "Name");
-
-    if(person != null ){
-        window.alert("Hello" + person)
-    }
-    else{
-        window.alert("You've not written your name")
-    }
-
+var person = prompt ("Type your name", "Name")
+window.alert ("Hello " + person)
 
 })();
