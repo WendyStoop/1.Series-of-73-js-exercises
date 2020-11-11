@@ -11,20 +11,45 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
-
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+        /*console.log("Addition button was clicked");*/
+        var operandOne =  document.getElementById("op-one").value;
+        console.log (operandOne);
+        var operandTwo = document.getElementById("op-two").value;
+        console.log (operandTwo);
+        var addition = Number(operandOne) + Number(operandTwo);
+        window.alert(addition);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        // perform an addition
+        /*console.log("Addition button was clicked");*/
+        var operandOne =  document.getElementById("op-one").value;
+        console.log (operandOne);
+        var operandTwo = document.getElementById("op-two").value;
+        console.log (operandTwo);
+        var substraction = Number(operandOne) - Number(operandTwo);
+        window.alert(substraction);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
+        var operandOne =  document.getElementById("op-one").value;
+        console.log (operandOne);
+        var operandTwo = document.getElementById("op-two").value;
+        console.log (operandTwo);
+        var multiplication = Number(operandOne) * Number(operandTwo);
+        window.alert(multiplication);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
+        var operandOne =  document.getElementById("op-one").value;
+        console.log (operandOne);
+        var operandTwo = document.getElementById("op-two").value;
+        console.log (operandTwo);
+        var division = Number(operandOne) / Number(operandTwo);
+        window.alert(division);
     });
 })();
