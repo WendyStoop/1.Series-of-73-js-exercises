@@ -23,7 +23,7 @@ name = "Bert";
 console.log(name);*/
 
 var name = "Wendy";
-var person = window.prompt ("type your name");
+var person = window.prompt ("type your name", name);
 console.log(person);
 /*console.log ("type your name", name);*/
 window.alert ("Hello, " + person  + "!")

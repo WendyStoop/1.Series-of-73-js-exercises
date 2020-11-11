@@ -11,12 +11,27 @@
 
 (function() {
 
-  var cake = prompt ("Do you want some cake?")
+  /*var cake = prompt ("Do you want some cake?")
   if (cake == "yes"){
     window.alert ("Congrats")
   
     }
   if (cake != "yes"){
     window.alert ("More cake for me then :p !")
-  }
+  }*/
+var answer = "yes";
+answer = window.prompt ("Do you want some cake?");
+
+console.log ("Do you want some cake? " + answer);
+
+if( answer == "yes") {
+  window.alert("Congrats!");
+} 
+/*if( answer != "yes") {
+  window.alert ("More cake for me then :p !")
+}*/
+else{
+  window.alert ("More cake for me then :p !")
+}
+
 })();
