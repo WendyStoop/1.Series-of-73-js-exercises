@@ -9,14 +9,6 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 (function() {
-
-    var userConfirmed = false;
-    do {
-        var age = prompt("What is your Age?");
-        var gender = prompt("What is your Gender?");
-        var town = prompt("In which town do you live?");
-
-        userConfirmed = confirm(`You are a ${age} years old ${gender} living in the town ${town}?`);
-    } while(!userConfirmed)
+    
 
 })();

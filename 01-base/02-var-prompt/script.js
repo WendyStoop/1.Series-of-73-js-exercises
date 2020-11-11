@@ -11,7 +11,31 @@
 
 (function() {
 
-var person = prompt ("Type your name", "Name")
-window.alert ("Hello " + person)
+/*var person = window.prompt ("Type your name", "Name")
+window.alert ("Hello " + person)*/
+
+/*var name = "Wendy";
+
+console.log(name);
+name = "René";
+console.log(name);
+name = "Bert";
+console.log(name);*/
+
+var name = "Wendy";
+var person = window.prompt ("type your name");
+console.log(person);
+/*console.log ("type your name", name);*/
+window.alert ("Hello, " + person  + "!")
+
+
+
+
+
+
+
+
+// window.alert ("10"+"20");
+// console.log ("nr1" + "nr2");
 
 })();
