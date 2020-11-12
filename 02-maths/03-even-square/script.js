@@ -11,10 +11,37 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
+  
 
         // your code here
+       /*document.querySelector("run");*/
 
-    });
+       let squareNrs = [ ];
 
-})();
+       var button= document.getElementById("run") .addEventListener("click", function (){
+           for(var i = 2; i < 21; i+=2 ){
+
+
+
+
+            console.log(Math.pow(i, 2));
+            squareNrs.push(Math.pow(i, 2))
+
+             
+            }
+    
+       alert(squareNrs);
+        }
+       
+       
+       
+        )
+
+     
+      
+       
+
+       
+     
+
+    })();
