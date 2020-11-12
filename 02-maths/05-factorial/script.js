@@ -12,11 +12,38 @@
 (function() {
     
     // to get the value of an input: document.getElementById("element-id").value
+  
+        // your code here
+        
+
+   
+   /*function sum(a, b){
+        
+        console.log(a + b)
+    }
+    sum ("Aimal", "Wendy");*/
+    let value;
+    document.getElementById("number").value
 
     document.getElementById("run").addEventListener("click", function() {
+        value = document.getElementById("number").value
+        // your code heregit 
+        alert(factorial(value))
 
-        // your code here
+        function factorial(value) {
+            if (value < 0) {
+                  return -1;
+            }
+            else if (value == 0){ 
+                return 1;
+            }
+            else {
+                return (value * factorial(value - 1));
+            }
+          }
 
     });
+
+
 
 })();

@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /02-maths/04-sort-numbers/script.js - 2.4: classer des nombres
+ * /02-maths/05-factorial/script.js - 2.5: Factorielle
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -10,16 +10,27 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // to get the value of an input: document.getElementById("element-id").value
-    let numbers = document.getElementById("numbers").value;
     
-    document.getElementById("run").addEventListener("click", function() {
+    // to get the value of an input: document.getElementById("element-id").value
+    let value;
+    document.getElementById("number").value
 
+    document.getElementById("run").addEventListener("click", function() {
+        value = document.getElementById("number").value
         // your code here
-        arr = JSON.parse ("["+numbers+"]");
-        numbers = arr.sort(function(a, b){return a-b});
-        document.getElementById("numbers").value = numbers;
+        alert(factorial(value))
+
+        function factorial(value) {
+            if (value < 0) {
+                  return -1;
+            }
+            else if (value == 0){ 
+                return 1;
+            }
+            else {
+                return (value * factorial(value - 1));
+            }
+          }
 
     });
 
