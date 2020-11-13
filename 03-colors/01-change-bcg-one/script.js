@@ -12,5 +12,32 @@
 (function() {
 
     // your code here
+    const changeColor = buttonId => {
+
+        switch(buttonId)
+        {
+            case "red":
+                document.body.style.backgroundColor = "red";
+                break;
+            case "green":
+                document.body.style.backgroundColor = "green";
+                break;
+            case "yellow":
+                document.body.style.backgroundColor = "yellow";
+                break;
+            case "blue":
+                document.body.style.backgroundColor = "blue";
+                break;
+            default:
+                console.log("Invalid color option.")
+        }
+    }
+
+    Array.from(document.querySelectorAll(".actions button")).forEach($btn =>
+        $btn.addEventListener(
+            "click",
+            () => (changeColor($btn.id), false),
+        ),
+    );
 
 })();
