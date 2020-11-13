@@ -23,7 +23,7 @@
     }
     sum ("Aimal", "Wendy");*/
     let value;
-    document.getElementById("number").value
+    document.getElementById("number").value;
 
     document.getElementById("run").addEventListener("click", function() {
         value = document.getElementById("number").value
