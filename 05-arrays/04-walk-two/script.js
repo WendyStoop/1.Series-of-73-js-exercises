@@ -9,23 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
+(function () {
     var fruits = [
-        "apple",
-        "peer",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarine",
-        "durian",
-        "peach",
-        "grape",
-        "cherry",
+      'apple',
+      'peer',
+      'strawberry',
+      'tomato',
+      'kiwi',
+      'banana',
+      'orange',
+      'mandarine',
+      'durian',
+      'peach',
+      'grape',
+      'cherry',
     ];
-
-    // your code here
-
-})();
+  
+    document.getElementById('run').addEventListener('click', () => {
+      //This is a loop were fruit is a different element of the array every iteration (=herhaling).
+      fruits.forEach((fruit) => {
+        console.log(fruit);
+      });
+    });
+  })();
+  

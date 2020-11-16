@@ -1,3 +1,4 @@
+  
 /* becode/javascript
  *
  * /06-objects/01-generate-object/script.js - 6.1: générer un object
@@ -10,5 +11,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    var wendy = {
+      firstname: "Wendy",
+      lastname: 'Stoop',
+      age: '27',
+      city: 'Kieldrecht',
+      country: 'Belgium',
+    };
+  
+    console.log(wendy);
+  })();
