@@ -15,4 +15,20 @@
 
     // your code here
 
+    var target = document.getElementById("target");
+
+    var date = new Date ();
+    var hour = date.getHours();
+    var minute = date.getMinutes();
+
+    if (hour < 17 || (hour === 17 && minute < 30)) {
+        target.innerHTML= "<em>Hello</em>"
+        
+    }
+    else {
+        target.innerHTML= "<em>Good evening</em>"
+    }
+    
+
+
 })();
