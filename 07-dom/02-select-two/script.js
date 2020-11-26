@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
+    
+    const myParargraph = document.querySelector("#target");
+    console.log (myParagraph);
 
+    myParargraph.innerHTML= "owned";
+    console.log (myParagraph);
+    
     // your code here
 
 })();
