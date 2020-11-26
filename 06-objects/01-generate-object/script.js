@@ -20,4 +20,8 @@
     };
   
     console.log(wendy);
+
+   function showName(name{}) 
+
+    document.getElementById('run').onclick = () => {}
   })();
