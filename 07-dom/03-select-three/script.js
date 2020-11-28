@@ -10,6 +10,17 @@
 // You will have time to focus on it later.
 
 (function() {
+    const myParagraphs = document.querySelectorAll (".target");
+    console.log(myParagraphs)
+    myParagraphs.forEach(function(e){
+
+    e.innerHTML = "owned"
+    });
+        
+    
+   
+
+    
 
     // your code here
 
