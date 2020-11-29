@@ -10,6 +10,29 @@
 // You will have time to focus on it later.
 
 (function() {
+    let papa = document.getElementById("target");
+    //console.log(papa);
+    
+    let table = document.createElement("table");
+    
+    papa.appendChild(table);
+
+    let tbody = document.createElement("tbody");
+
+    table.appendChild(tbody);
+
+    for (let i = 0; i<10; i++){
+        let tr = document.createElement("tr");
+
+        tbody.appendChild(tr);
+
+        let td = document.createElement("td");
+        tr.appendChild(td);
+
+    }
+
+
+
 
     // your code here
 
