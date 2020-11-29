@@ -21,4 +21,24 @@
 
     // your code here
 
+    let index = 0;
+    document.querySelector("#next").addEventListener("click", function(){
+        let foto = document.querySelector("img");
+        //console.log(foto);
+        
+    
+
+       foto.src = gallery[index];
+
+       if(index===4){ 
+           index = 0
+       }
+       else{
+           index++
+       }
+    
+    });
+
+
+
 })();
